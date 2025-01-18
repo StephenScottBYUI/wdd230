@@ -1,8 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-main {
-    margin: auto;
+:root {
+    --primary-color: #2C736C;
+    --background-color: #D7D7D9;
+    --nav-color: #73503C;
+    --heading-font: 'Pridi', serif;
+    --paragraph-font: 'Playfair Display', serif;
+}
+
+body {
+    justify-content: center;
+    overflow: auto;
+    background-color: var(--background-color);
+    margin: 0 auto;
     display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 15% 1fr 1fr 15%;
+    padding: 0;
+    max-width: 1000px;
+}
+
+header {
+    overflow: auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+
+
+
+}
+
+header img {
+    grid-column: 2/3;
+    margin: auto 0;
+    padding: 10% 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+header h1 {
+    grid-column: 3/6;
+    font: 5vw var(--heading-font);
+    padding: 0 5%;
+    align-content: center;
+}
+
+nav {
+    font: 1vw var(--paragraph-font);
+    font-weight: 700;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav a {
+    padding: 1vw;
+    min-height: 10px;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    max-width: 50%;
+    display: grid;
+
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card ul {
     list-style-type: none;
+}
+
+footer {
+    grid-column: 2/3;
+    grid-row: 4/5;
 }

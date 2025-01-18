@@ -6,7 +6,8 @@
     <title>Stephen Scott - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development, Stephen Scott, Course assignment portal">
     <meta name="author" content="Stephen Scott">
-    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css">
+
 </head>
 
 <body>
@@ -44,13 +45,20 @@
         </section>
     </main>
     <footer>
-        <p>
-            <!--Copyright and year-->
-            Stephen Scott
-            New Jersey
+        <p>&copy;<span id="year"></span>
+
+            <script src="scripts/getDates.js"></script>
+
+            <script>
+                document.getElementById("year").textContent = getCurrentYear();
+            </script>
         </p>
         <p id="lastModified">
-
+            <script>
+                const lastModified = document.lastModified;
+                const message = "Last Modification:" + lastModified;
+                document.getElementById("lastModified").textContent = message;
+            </script>
         </p>
     </footer>
 </body>
