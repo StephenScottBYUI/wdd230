@@ -47,22 +47,10 @@
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="year"></span>
+        <p>&copy; <span id="currentYear"></span> <br> Stephen Scott</p>
+        <p id="lastModified"></p>
 
-            <script src="scripts/getDates.js"></script>
-
-            <script>
-                document.getElementById("year").textContent = getCurrentYear();
-            </script>
-        <div>Stephen Scott</div>
-        </p>
-        <p id="lastModified">
-            <script>
-                const lastModified = document.lastModified;
-                const message = "Last Modification:" + lastModified;
-                document.getElementById("lastModified").textContent = message;
-            </script>
-        </p>
+        <script src="scripts/getDates.js"></script>
     </footer>
 </body>
 
