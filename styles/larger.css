@@ -1,0 +1,31 @@
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 1rem;
+    }
+
+    main h2 {
+        grid-column: span 2;
+    }
+
+    #learning {
+        grid-template-columns: 1/2;
+        margin: 0;
+    }
+
+    #info {
+        grid-template-columns: 2/3;
+    }
+}
