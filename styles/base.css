@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 15% 20% 1fr 15%;
+    grid-template-rows: auto auto auto auto;
     padding: 0;
     max-width: 1000px;
 }
@@ -120,7 +120,13 @@ main h2 {
 .card ul {
     list-style-type: decimal-leading-zero;
     font-family: var(--paragraph-font);
+    font-size: 1rem;
 
+
+}
+
+.card ul li {
+    margin-bottom: 1rem;
 }
 
 footer {
