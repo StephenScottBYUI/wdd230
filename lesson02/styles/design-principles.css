@@ -1,0 +1,60 @@
+@import url(../../styles/colors-and-fonts.css);
+
+body {
+    background-color: var(--background-color);
+
+}
+
+h1,
+h2,
+h3 {
+    color: var(--background-color);
+    font-family: var(--heading-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    grid-template-columns: 1/4;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vw;
+    padding: 0 5%;
+
+}
+
+.examples {
+    background-color: var(--nav-color);
+
+}
+
+h3 {
+    background-color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+    padding: 2vw;
+}
+
+div {
+    margin: 0 1vw;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.examples div a {
+    grid-row: 1/2;
+    padding: 1vw;
+}
+
+.examples div img {
+    grid-row: 2/3;
+    max-width: ;
+    height: auto;
+}
+
+.examples div p {
+    grid-row: 3/4;
+}
