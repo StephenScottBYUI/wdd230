@@ -195,10 +195,9 @@ main h2 {
 }
 
 iframe {
-    display: block;
-    grid-row: 4/5;
-
-
+    margin: 1rem auto;
+    width: 100;
+    height: 75;
 }
 
 footer {
