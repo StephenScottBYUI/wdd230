@@ -32,6 +32,7 @@ ol {
 
 header {
     background-color: var(--heading-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -52,6 +53,7 @@ section {
     padding: 0;
     border: 1px solid var(--text-color);
     margin-bottom: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
 }
 
