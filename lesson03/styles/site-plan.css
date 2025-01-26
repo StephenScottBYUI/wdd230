@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --heading-color: #59163B;
+    --background-color: #F2E4BB;
+    --nav-color: #79361E;
+    --text-color: #0D0D0D;
+    --button-color: #88C057;
+    --heading-font: 'Montserrat', sans-serif;
+    --special-font: 'Playfair Display', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+ol {
+    padding-left: 1rem;
+}
+
+header {
+    background-color: var(--heading-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    color: var(--background-color);
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 1rem;
+
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--text-color);
+    margin-bottom: 1rem;
+
+}
+
+section h2 {
+    background-color: var(--heading-color);
+    font-family: var(--heading-font);
+    padding: .5rem;
+    color: var(--background-color);
+    margin: 0;
+}
+
+#site-name div {
+    padding: 0 1rem;
+}
+
+#site-name h2+p {
+    font-family: var(--special-font);
+    border-bottom: ;
+}
+
+.site-purpose-list>li {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+#site-purpose ul li {
+    font-family: var(--text-font);
+    font-weight: 400;
+}
+
+#scenarios li {
+    margin-bottom: .5rem;
+}
+
+#color .colors {
+    padding: 0 1rem;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.color-square {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--text-color);
+}
+
+.offset {
+    padding-left: 1rem;
+}
+
+#typography div {
+    padding: 0 1rem;
+}
+
+#typography h3 {
+    border-bottom: 1px solid var(--text-color);
+    font-family: var(--heading-font);
+}
+
+#typography p {
+    padding-left: 1rem;
+}
+
+.margin {
+    padding: 0 1rem;
+}
+
+#wireframe img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--heading-color);
+    color: var(--background-color);
+    text-align: center;
+}
+
+#bg-color {
+    background-color: var(--background-color);
+}
+
+#heading-color {
+    background-color: var(--heading-color);
+}
+
+#text-color {
+    background-color: var(--text-color);
+}
+
+#nav-color {
+    background-color: var(--nav-color);
+}
+
+#cta-color {
+    background-color: var(--button-color);
+}
+
+#name {
+    font-family: var(--special-font);
+    font-weight: 700;
+    border-bottom: 1px solid var(--text-color);
+}
