@@ -33,7 +33,7 @@ header img {
     grid-column: 2/3;
     margin: auto 0;
     padding: 10% 5%;
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
 }
 
@@ -210,12 +210,12 @@ footer {
     font-weight: 200;
 }
 
-footer p::before {
+.emoji::before {
     content: "👌";
 
 }
 
-footer p::after {
+.emoji::after {
     content: "👌";
     color: var(--background-color);
 }
