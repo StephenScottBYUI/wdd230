@@ -81,14 +81,10 @@ header h1 {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+
 }
 
-.navigation a:hover {
-    background-color: #bbb;
-    color: #333;
-    font-weight: 700;
-}
+
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
@@ -218,4 +214,10 @@ footer {
 .emoji::after {
     content: "👌";
     color: var(--background-color);
+}
+
+.center-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
