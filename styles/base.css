@@ -33,7 +33,7 @@ header img {
     grid-column: 2/3;
     margin: auto 0;
     padding: 10% 5%;
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
 }
 
