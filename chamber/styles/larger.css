@@ -1,4 +1,3 @@
-@import url(colors-and-fonts.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @media (min-width: 1000px) {
@@ -22,13 +21,28 @@
 
     }
 
-    .hero {
-        grid-row: 1/2;
+    header {
+        display: flex;
+        flex-direction: column;
     }
 
-    header h1 {
-        font-size: 2.8vw;
+    .hero {
         grid-row: 2/3;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    #join-us {
+        max-height: 50px;
+        top: 325px;
+        left: 25px;
+
+    }
+
+    #join-us:hover {
+        transform: scale(1.2);
     }
 
     main {
@@ -47,6 +61,8 @@
         margin-bottom: 1rem;
 
     }
+
+
 
     .scrolling-container {
         grid-column: 2/3;
@@ -100,10 +116,12 @@
 
     .navigation {
         flex-direction: row;
+
     }
 
     .navigation a {
         display: block;
         flex: 1 1 100%;
+        font-size: 1.75rem;
     }
 }

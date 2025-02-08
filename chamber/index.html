@@ -8,6 +8,7 @@
     <meta name="description" content="Willingboro Chamber of Commerce Homepage">
     <meta name="author" content="Stephen Scott">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="styles/colors-and-fonts.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -22,10 +23,19 @@
 
 <body>
     <header>
+        <div class="dark-mode">
+            <p>Dark Mode:</p>
+            <div id="switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
         <a id="menu" href="#"></a>
         <a id="join-us" href="join/join-us.html">Join Us</a>
-        <img class="hero" src="images/hero-img.webp" alt="Rancocas River">
-        <h1>Willingboro Chamber of Commerce</h1>
+        <img class="hero" src="images/hero-img3.webp" alt="Downtown Willingboro">
+        <img class="logo" src="images/willingboro-logo.svg" alt="Willingboro Chamber of Commerce logo">
     </header>
     <nav class="navigation">
         <ul>
@@ -97,8 +107,10 @@
         <p class="emoji">Stephen Scott - WDD 230 Chamber of Commerce Project</p>
         <p id="lastModified"></p>
 
-        <script src="../scripts/getdates.js"></script>
+
     </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 
 </html>
