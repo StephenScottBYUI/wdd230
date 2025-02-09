@@ -198,8 +198,9 @@ main h2 {
 
 iframe {
     margin: 1rem auto;
-    width: 100;
-    height: 75;
+    width: 100%;
+    height: 300px;
+    max-width: 639px;
 }
 
 footer {
