@@ -1,24 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const switchInput = document.querySelector('.switch input[type="checkbox"]');
+    const switchInput = document.getElementById('darkModeToggle');
     const themeStylesheet = document.getElementById('theme-stylesheet');
-    const logo = document.querySelector('.logo')
+    const logo = document.querySelector('.logo');
 
+    // Check localStorage for dark mode preference on page load
     if (localStorage.getItem('darkMode') === 'enabled') {
-        switchInput.check = true;
+        switchInput.checked = true;  // Corrected to "checked"
         themeStylesheet.setAttribute('href', 'styles/dm-colors-and-fonts.css');
-        logo.setAttribute('src', 'images/dm-willingboro-logo.svg')
+        logo.setAttribute('src', 'images/dm-willingboro-logo.svg');
     }
 
+    // Add event listener to toggle dark mode and save preference
     switchInput.addEventListener('change', function () {
         if (switchInput.checked) {
-
+            // Activate dark mode
             themeStylesheet.setAttribute('href', 'styles/dm-colors-and-fonts.css');
-            logo.setAttribute('src', 'images/dm-willingboro-logo.svg')
+            logo.setAttribute('src', 'images/dm-willingboro-logo.svg');
             localStorage.setItem('darkMode', 'enabled');
         } else {
-
+            // Revert to light mode
             themeStylesheet.setAttribute('href', 'styles/colors-and-fonts.css');
-            logo.setAttribute('src', 'images/willingboro-logo.svg')
+            logo.setAttribute('src', 'images/willingboro-logo.svg');
             localStorage.setItem('darkMode', 'disabled');
         }
     });
