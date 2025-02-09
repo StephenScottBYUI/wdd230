@@ -362,6 +362,8 @@ main {
     height: auto;
     width: 75%;
     justify-self: center;
+    max-width: 499px;
+
 }
 
 footer {
