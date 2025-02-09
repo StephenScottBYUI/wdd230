@@ -22,6 +22,9 @@ function favScripture() {
 
         input.focus();
     }
+    else {
+        input.focus();
+    }
 }
 
 button.addEventListener('click', favScripture);
