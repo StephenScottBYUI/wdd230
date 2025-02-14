@@ -154,6 +154,7 @@ main {
 }
 
 .hero-title {
+    /* what the heck*/
     font-family: var(--heading-font);
     position: absolute;
     display: block;
