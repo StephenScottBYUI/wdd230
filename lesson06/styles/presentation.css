@@ -1,0 +1,62 @@
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    border: 5px solid black;
+    min-width: 50px;
+    min-height: 50px;
+    padding: 1rem;
+}
+
+
+
+#cta-a.hidden,
+#cta-b.hidden {
+    display: none;
+}
+
+#cta-a,
+#cta-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.button {
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.version-a {
+    background-color: #007BFF;
+    color: white;
+
+}
+
+.version-b {
+    background-color: #28A745;
+    color: white;
+
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+main h1:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}

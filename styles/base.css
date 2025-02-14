@@ -11,17 +11,14 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /*display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: auto auto auto auto auto;*/
+
     padding: 0;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 header {
     overflow: auto;
-    grid-column: 2/3;
-    grid-row: 1/2;
+
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
@@ -139,9 +136,36 @@ nav a:hover {
 }
 
 main {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin: 1vw;
+
+    margin: 1rem 0;
+}
+
+.center {
+    justify-self: center;
+}
+
+
+
+.hero {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.hero-title {
+
+    position: absolute;
+    display: block;
+    top: 25px;
+    color: var(--primary-color);
+    z-index: 1000;
+    padding: 1rem;
+    text-align: end;
+    background: linear-gradient(to left, var(--nav-color) 0%, rgba(255, 0, 0, 0) 100%);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
 }
 
 main h2 {
