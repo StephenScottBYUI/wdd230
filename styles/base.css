@@ -154,7 +154,7 @@ main {
 }
 
 .hero-title {
-
+    font-family: var(--heading-font);
     position: absolute;
     display: block;
     top: 25px;
