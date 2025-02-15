@@ -35,8 +35,18 @@
             </div>
         </div>
         <a id="menu" href="#" aria-label="Open navigation menu"></a>
-        <a id="join-us" href="join/join-us.html">Join Us</a>
-        <img class="hero" src="images/hero-img3.webp" alt="Downtown Willingboro">
+
+        <div class="hero-box">
+            <a id="join-us" href="join/join-us.html">Join Us</a>
+            <picture class="hero">
+                <source srcset="images/wdd230-org-large.webp" media="(min-width:1000px)">
+
+                <source srcset="images/wdd230-org-medium.webp" media="(min-width:500px)">
+
+                <img class="hero" src="images/wdd230-org-small.webp" alt="Downtown Willingboro">
+            </picture>
+            <p class="hero-label"></p>
+        </div>
         <img class="logo" src="images/willingboro-logo.svg" alt="Willingboro Chamber of Commerce logo">
     </header>
     <nav class="navigation">
@@ -101,7 +111,7 @@
         </section>
         <section class="weather-box">
             <h2>Weather</h2>
-            <img class="weather" src="images/weather.webp" alt="weather placeholder">
+            <img class="weather" src="images/weather.webp" alt="weather placeholder" width="300" height="300">
         </section>
     </main>
     <footer>
@@ -113,6 +123,7 @@
     </footer>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/heroText.js"></script>
 </body>
 
 </html>

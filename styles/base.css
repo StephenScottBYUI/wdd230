@@ -209,6 +209,7 @@ main h2 {
     font-weight: 400;
     color: var(--background-color);
     margin: 0;
+    padding: 1rem;
 }
 
 .card ul {
@@ -263,4 +264,5 @@ footer {
 
 .center-map h4 {
     width: 100%;
+
 }

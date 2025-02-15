@@ -37,9 +37,10 @@
     }
 
     #join-us {
-        max-height: 50px;
-        top: 325px;
-        left: 25px;
+
+        bottom: 25px;
+        right: 25px;
+        padding-bottom: 1rem;
 
     }
 
