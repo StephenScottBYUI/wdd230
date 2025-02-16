@@ -368,6 +368,10 @@ main {
 .weather-box {
     display: grid;
     grid-template-rows: auto 1fr;
+    background-color: var(--heading-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+
 
 
 
@@ -375,22 +379,22 @@ main {
 }
 
 .weather-box h2 {
-    background-color: var(--heading-color);
+
     color: var(--background-color);
-    padding: 1rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+
 
 
 }
+
+
 
 
 .weather {
-    height: auto;
-    width: 75%;
-    justify-self: center;
-    max-width: 499px;
-
+    color: var(--background-color);
 }
+
+
 
 footer {
     padding: 1rem;
