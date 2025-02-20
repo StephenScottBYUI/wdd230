@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 07</title>
+    <meta name="description" content="Lesson 07">
+    <meta name="author" content="Stephen Scott">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stephenscottbyui.github.io/wdd230/">
+    <meta property="og:image" content="https://stephenscottbyui.github.io/wdd230/images/bluffton.jpg">
+    <meta property="og:title" content="Lesson 07">
+</head>
+
+<body>
+    <header>
+        <h1>Lesson 07 - Lazy Load</h1>
+    </header>
+    <main>
+        <img src="https://loremflickr.com/400/600?random1" loading="lazy" />
+        <img src="https://loremflickr.com/400/600?random2" loading="lazy" />
+        <img src="https://loremflickr.com/400/600?random3" loading="lazy" />
+        <img src="https://loremflickr.com/400/600?random4" loading="lazy" />
+        <img src="https://loremflickr.com/400/600?random5" loading="lazy" />
+        <img src="https://loremflickr.com/400/600?random6" loading="lazy" />
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span></p>
+        <p class="emoji">Stephen Scott</p>
+        <p id="lastModified"></p>
+
+        <script src="../scripts/getdates.js"></script>
+    </footer>
+</body>
+
+</html>

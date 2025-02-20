@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fade-from-black {
+
+
+    0% {
+        opacity: 0;
+        background-color: black;
+    }
+
+    100% {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+img {
+    animation: fade-from-black 5s ease-in-out;
+    margin-bottom: 1rem;
+    width: 400px;
+    height: 600px;
+}
