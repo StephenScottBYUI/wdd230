@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willingboro Chamber of Commerce</title>
+    <meta name="description" content="Willingboro Chamber of Commerce Homepage">
+    <meta name="author" content="Stephen Scott">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="styles/colors-and-fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <!--Open Graph Meta Tags-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stephenscottbyui.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://stephenscottbyui.github.io/wdd230/chamber/images/willingboro-meta.webp">
+    <meta property="og:title" content="Willingboro Chamber of Commerce Homepage">
+</head>
+
+<body>
+    <header>
+        <h1 class="visually-hidden">Willingboro Chamber of Commerce</h1>
+        <div class="dark-mode">
+            <p>Dark Mode:</p>
+            <div id="switch">
+                <label for="darkModeToggle" class="switch">
+                    <span class="visually-hidden">Toggle Dark Mode</span>
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <a id="menu" href="#" aria-label="Open navigation menu"></a>
+
+        <div class="hero-box">
+            <a id="join-us" href="join/join-us.html">Join Us</a>
+            <picture class="hero">
+                <source srcset="images/hero-img.webp" media="(min-width:1000px)">
+
+                <source srcset="images/hero-img-med.webp" media="(min-width:500px)">
+
+                <img class="hero" src="images/hero-img-sm.webp" alt="Downtown Willingboro">
+            </picture>
+
+        </div>
+        </div>
+        <a class="logo" href="index.html">
+            <picture class="logo-img">
+                <source srcset="images/willingboro-logo.webp" media="(min-width:500px)">
+
+                <source srcset="images/willingboro-logo-sm.webp" media="(max-width:499px)">
+
+                <img class="logo-img" src="images/willingboro-logo-sm.webp" alt="Willingboro Chamber of Commerce logo">
+            </picture>
+        </a>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="discover.html">Discover Willingboro</a></li>
+            <li><a href="local-businesses.html">Local Businesses</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="board.html">About Us</a></li>
+            <li><a href="resources.html">Business Resources</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="col2">
+            <section class="scrolling-container">
+                <div class="scrolling-content">
+                    <p>News & Events:<br class="special-break"> This will scroll in mobile and display in block form in
+                        larger views. </p>
+                </div>
+            </section>
+            <section class="weather-box">
+                <h2>Weather</h2>
+                <div class="weather-info">
+                    <p class="temp weather">Temperature: <span id="tempNumber">34</span>° F</p>
+                    <p class="wind-speed weather">Wind Speed: <span id="windNumber">12</span> MPH</p>
+                    <p class="wind-chill weather">Wind Chill: <span id="windChill"></span></p>
+                </div>
+            </section>
+
+            <section class="last-visit">
+                <span id="lastVisit"></span>
+            </section>
+        </div>
+        <section class="discover-sect">
+            <h2>Discover Willingboro</h2>
+            <div class="img-discover-container">
+                <picture class="img-discover">
+                    <source srcset="images/discover/willingboro-art-lg.webp" min-width="1000px">
+                    <source srcset="images/discover/willingboro-art-md.webp" min-width="500px">
+                    <img class="img-discover" src="images/discover/willingboro-art.webp"
+                        alt="Wall art in downtown Willingboro" loading="lazy">
+                </picture>
+                <p>This painting is featured prominently in Willingboro's downtown.</p>
+            </div>
+            <div class="img-discover-container">
+                <picture class="img-discover">
+                    <source srcset="images/discover/willingboro-pool-lg.webp" min-width="1000px">
+                    <source srcset="images/discover/willingboro-pool-md.webp" min-width="500px">
+                    <img class="img-discover" src="images/discover/willingboro-pool.webp"
+                        alt="Wall art in downtown Willingboro" loading="lazy">
+                </picture>
+                <p>This is one of the many public pools in Willingboro and it is very popular in those hot summer months
+                </p>
+            </div>
+            <div class="img-discover-container">
+                <picture class="img-discover">
+                    <source srcset="images/discover/willingboro-dog-lg.webp" min-width="1000px">
+                    <source srcset="images/discover/willingboro-dog-md.webp" min-width="500px">
+                    <img class="img-discover" src="images/discover/willingboro-dog.webp"
+                        alt="Wall art in downtown Willingboro" loading="lazy">
+                </picture>
+                <p>Enjoy some time with your favorite pooch at our local dog park. Don't have a pup of your own, feel
+                    free to stop by our local shelter and sign up for our adopt a dog for a day program.</p>
+            </div>
+            <div class="img-discover-container">
+                <picture class="img-discover">
+                    <source srcset="images/discover/willingboro-market-lg.webp" min-width="1000px">
+                    <source srcset="images/discover/willingboro-market-md.webp" min-width="500px">
+                    <img class="img-discover" src="images/discover/willingboro-market.webp"
+                        alt="Wall art in downtown Willingboro" loading="lazy">
+                </picture>
+                <p>Come get some local produce for your next meal, or check out other items offered by our local vendors
+                </p>
+            </div>
+            <div class="img-discover-container">
+                <picture class="img-discover">
+                    <source srcset="images/discover/willingboro-music-lg.webp" min-width="1000px">
+                    <source srcset="images/discover/willingboro-music-md.webp" min-width="500px">
+                    <img class="img-discover" src="images/discover/willingboro-music.webp"
+                        alt="Wall art in downtown Willingboro" loading="lazy">
+                </picture>
+                <p>If nightlife is what you are into we have a few great venues to check out performances.</p>
+            </div>
+            <div class="img-discover-container">
+                <picture class="img-discover">
+                    <source srcset="images/discover/willingboro-park-lg.webp" min-width="1000px">
+                    <source srcset="images/discover/willingboro-park-md.webp" min-width="500px">
+                    <img class="img-discover" src="images/discover/willingboro-park.webp"
+                        alt="Wall art in downtown Willingboro" loading="lazy">
+                </picture>
+                <p>In the heart of Willingboro is Scott's Park, a massive park with plenty to do.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span></p>
+        <p class="emoji">Stephen Scott - WDD 230 Chamber of Commerce Project</p>
+        <p id="lastModified"></p>
+
+
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/heroText.js"></script>
+    <script src="scripts/windChill.js"></script>
+    <script src="scripts/lastVisit.js"></script>
+</body>
+
+</html>

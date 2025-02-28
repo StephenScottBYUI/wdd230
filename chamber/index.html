@@ -39,19 +39,27 @@
         <div class="hero-box">
             <a id="join-us" href="join/join-us.html">Join Us</a>
             <picture class="hero">
-                <source srcset="images/wdd230-org-large.webp" media="(min-width:1000px)">
+                <source srcset="images/hero-img.webp" media="(min-width:1000px)">
 
-                <source srcset="images/wdd230-org-medium.webp" media="(min-width:500px)">
+                <source srcset="images/hero-img-med.webp" media="(min-width:500px)">
 
-                <img class="hero" src="images/wdd230-org-small.webp" alt="Downtown Willingboro">
+                <img class="hero" src="images/hero-img-sm.webp" alt="Downtown Willingboro">
             </picture>
-            <p class="hero-label"></p>
+
         </div>
-        <img class="logo" src="images/willingboro-logo.svg" alt="Willingboro Chamber of Commerce logo">
+        <a class="logo" href="index.html">
+            <picture class="logo-img">
+                <source srcset="images/willingboro-logo.webp" media="(min-width:500px)">
+
+                <source srcset="images/willingboro-logo-sm.webp" media="(max-width:499px)">
+
+                <img class="logo-img" src="images/willingboro-logo-sm.webp" alt="Willingboro Chamber of Commerce logo">
+            </picture>
+        </a>
     </header>
     <nav class="navigation">
         <ul>
-            <li><a href="info.html">Info</a></li>
+            <li><a href="discover.html">Discover Willingboro</a></li>
             <li><a href="local-businesses.html">Local Businesses</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="board.html">About Us</a></li>
@@ -114,7 +122,7 @@
             <div class="weather-info">
                 <p class="temp weather">Temperature: <span id="tempNumber">34</span>° F</p>
                 <p class="wind-speed weather">Wind Speed: <span id="windNumber">12</span> MPH</p>
-                <p class="wind-chill weather">Wind Chill: Feels like <span id="windChill"></span></p>
+                <p class="wind-chill weather">Wind Chill: <span id="windChill"></span></p>
             </div>
         </section>
     </main>

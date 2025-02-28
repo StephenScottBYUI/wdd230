@@ -9,6 +9,15 @@ body {
     font-family: var(--text-font);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
 header {
     position: relative;
     overflow: hidden;
@@ -189,12 +198,26 @@ input:checked+.slider:before {
 }
 
 .logo {
+    display: flex;
+    align-content: center;
+    order: -1;
+    padding: 0;
+    margin: 0;
+}
+
+.logo:active {
+    background-color: var(--text-box-color);
+}
+
+.logo-img {
     grid-row: 1/2;
     padding: 0 5%;
-    align-content: center;
+
     color: var(--background-color);
-    grid-column: span 2;
-    order: -1;
+
+
+    width: 100%;
+    height: auto;
 }
 
 #menu {
@@ -320,6 +343,7 @@ main {
     border: 2px solid #333;
     padding: .2rem 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    max-height: 500px;
 }
 
 .scrolling-content {
@@ -344,7 +368,7 @@ main {
 }
 
 .all-stars h2 {
-    font-family: var(--heading-font);
+
     background-color: var(--heading-color);
     color: var(--background-color);
     padding: 1rem;
@@ -371,6 +395,7 @@ main {
     background-color: var(--heading-color);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     padding: 1rem;
+    max-height: 500px;
 
 
 
