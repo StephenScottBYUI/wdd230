@@ -1,0 +1,26 @@
+:root {
+    font-family: var(--paragraph-font);
+    color: var(--color-on-light);
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-color);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.required {
+    color: red;
+}
+
+#notMatch {
+    color: red;
+}
