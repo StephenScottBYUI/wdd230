@@ -133,4 +133,13 @@
         flex: 1 1 100%;
         font-size: 1.75rem;
     }
+
+    #signUp {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #biz-description {
+        max-width: 100%;
+    }
 }

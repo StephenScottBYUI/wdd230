@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willingboro Chamber of Commerce</title>
+    <meta name="description" content="Willingboro Chamber of Commerce Homepage">
+    <meta name="author" content="Stephen Scott">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="styles/colors-and-fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <!--Open Graph Meta Tags-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stephenscottbyui.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://stephenscottbyui.github.io/wdd230/chamber/images/willingboro-meta.webp">
+    <meta property="og:title" content="Willingboro Chamber of Commerce Homepage">
+</head>
+
+<body>
+    <header>
+        <h1 class="visually-hidden">Willingboro Chamber of Commerce</h1>
+        <div class="dark-mode">
+            <p>Dark Mode:</p>
+            <div id="switch">
+                <label for="darkModeToggle" class="switch">
+                    <span class="visually-hidden">Toggle Dark Mode</span>
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <a id="menu" href="#" aria-label="Open navigation menu"></a>
+
+        <div class="hero-box">
+            <a id="join-us" href="join.html">Join Us</a>
+            <picture class="hero">
+                <source srcset="images/hero-img.webp" media="(min-width:1000px)">
+
+                <source srcset="images/hero-img-med.webp" media="(min-width:500px)">
+
+                <img class="hero" src="images/hero-img-sm.webp" alt="Downtown Willingboro">
+            </picture>
+
+        </div>
+        </div>
+        <a class="logo" href="index.html">
+            <picture class="logo-img">
+                <source srcset="images/willingboro-logo.webp" media="(min-width:500px)">
+
+                <source srcset="images/willingboro-logo-sm.webp" media="(max-width:499px)">
+
+                <img class="logo-img" src="images/willingboro-logo-sm.webp" alt="Willingboro Chamber of Commerce logo">
+            </picture>
+        </a>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="discover.html">Discover Willingboro</a></li>
+            <li><a href="local-businesses.html">Local Businesses</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="board.html">About Us</a></li>
+            <li><a href="resources.html">Business Resources</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="sign-up-head">Join the Willingboro Chamber of Commerce</h2>
+        <form action="thankyou.html" method="get" id="signUp">
+            <label for="fname">First Name:<span class="required">*</span><br>
+                <input type="text" id="fname" name="first-name" required>
+            </label>
+            <label for="lname">Last Name:<span class="required">*</span><br>
+                <input type="text" id="lname" name="last-name" required>
+            </label>
+            <label for="position-title">Title/Position:<span class="required">*</span><br>
+                <input type="text" id="position-title" name="position-title" pattern="[A-Za-z\- ]{7,}" required>
+            </label>
+            <label for="email">Email:<span class="required">*</span><br>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </label>
+            <label for="phone">Phone:<span class="required">*</span><br>
+                <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required>
+            </label>
+            <label for="member-level">Membership Level:<span class="required">*</span><br>
+                <select name="member-level" id="level" required>
+                    <option value="" disabled selected hidden>Select Membership Level</option>
+                    <option value="np">Non-Profit Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <label for="description">
+                <textarea name="description" id="biz-description" rows="4" cols="30"
+                    placeholder="Optional. Describe your business."></textarea>
+            </label>
+            <input type="hidden" id="hiddenDate">
+            <button type="submit" id="joinUp">Join the CoC</button>
+        </form>
+        <section class="lvl-desc">
+            <div class="membership nonprofit">
+                <h2>Non-Profit Membership - Free</h2>
+
+                <ul>
+                    <li>Available for registered non-profit organizations. Enjoy Silver-level benefits at no
+                        cost!</li>
+            </div>
+
+            <div class="membership bronze">
+                <h2>Bronze Membership - $250/year</h2>
+                <ul>
+                    <li>Business listing in the Chamber’s online directory</li>
+                    <li>Access to networking events & mixers (discounted entry)</li>
+                    <li>Member-only discounts on select Chamber events</li>
+                    <li>Subscription to the Chamber’s newsletter</li>
+                    <li>Eligibility to join industry-specific committees</li>
+                    <li>Use of Chamber logo on website & marketing materials</li>
+                </ul>
+            </div>
+
+            <div class="membership silver">
+                <h2>Silver Membership - $500/year</h2>
+                <ul>
+                    <li>All Bronze Membership benefits</li>
+                    <li>Discounted advertising opportunities in Chamber publications</li>
+                    <li>One free admission to select training workshops or webinars per year</li>
+                    <li>Special recognition at annual Chamber events</li>
+                </ul>
+            </div>
+
+            <div class="membership gold">
+                <h2>Gold Membership - $1,000/year</h2>
+                <ul>
+                    <li>All Silver Membership benefits</li>
+                    <li>Premium listing & rotating spotlight feature on Chamber homepage</li>
+                    <li>Monthly social media spotlight post</li>
+                    <li>Free admission to all Chamber training workshops/webinars</li>
+                    <li>Exclusive VIP networking events & early registration access</li>
+                    <li>Priority sponsorship opportunities with promotional branding</li>
+                    <li>Recognition as a Chamber advocate in email campaigns</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span></p>
+        <p class="emoji">Stephen Scott - WDD 230 Chamber of Commerce Project</p>
+        <p id="lastModified"></p>
+
+
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/joinUs.js"></script>
+
+
+</body>
+
+</html>
