@@ -468,3 +468,7 @@ footer {
 
     order: 2;
 }
+
+.membership {
+    color: var(--color-on-light);
+}
