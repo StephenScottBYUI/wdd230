@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day Workout Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .toggle-btn:hover {
+            background: #0056b3;
+        }
+        .workout {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        h2 {
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="toggle-btn" onclick="toggleWorkout()">Switch Week</button>
+        
+        <div id="week1" class="workout active">
+            <h2>Workout Plan - Week 1 (Heavy Weight / Low Reps)</h2>
+            <h3>Monday: Arms & Shoulders</h3>
+            <ul>
+                <li>Seated Shoulder Press - 4 sets x 6-8 reps <a href="https://www.youtube.com/results?search_query=seated+shoulder+press" target="_blank">(Video)</a></li>
+                <li>Bicep Curls - 4 sets x 6-8 reps <a href="https://www.youtube.com/results?search_query=bicep+curls" target="_blank">(Video)</a></li>
+                <li>Lateral Raises - 3 sets x 8 reps <a href="https://www.youtube.com/results?search_query=lateral+raises" target="_blank">(Video)</a></li>
+                <li>Triceps Pushdowns - 3 sets x 8 reps <a href="https://www.youtube.com/results?search_query=triceps+pushdowns" target="_blank">(Video)</a></li>
+                <li>Hammer Curls - 3 sets x 8 reps <a href="https://www.youtube.com/results?search_query=hammer+curls" target="_blank">(Video)</a></li>
+            </ul>
+            <h3>Tuesday: Back</h3>
+            <ul>
+                <li>Lat Pulldown - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=lat+pulldown" target="_blank">(Video)</a></li>
+                <li>Seated Cable Row - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=seated+cable+row" target="_blank">(Video)</a></li>
+                <li>Bent-Over Rows - 3 sets x 12 reps <a href="https://www.youtube.com/results?search_query=bent+over+row" target="_blank">(Video)</a></li>
+                <li>Face Pulls - 3 sets x 15 reps <a href="https://www.youtube.com/results?search_query=face+pulls" target="_blank">(Video)</a></li>
+            </ul>
+            <h3>Wednesday: Legs</h3>
+            <ul>
+                <li>Leg Press - 4 sets x 6-8 reps <a href="https://www.youtube.com/results?search_query=leg+press" target="_blank">(Video)</a></li>
+                <li>Goblet Squats - 3 sets x 8 reps <a href="https://www.youtube.com/results?search_query=goblet+squat" target="_blank">(Video)</a></li>
+                <li>Seated Calf Raises - 3 sets x 10 reps <a href="https://www.youtube.com/results?search_query=seated+calf+raises" target="_blank">(Video)</a></li>
+                <li>Leg Curls - 3 sets x 6-8 reps <a href="https://www.youtube.com/results?search_query=leg+curls" target="_blank">(Video)</a></li>
+            </ul>
+<h3>Thursday: Chest</h3>
+            <ul>
+                <li>Incline Machine Press - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=incline+machine+press" target="_blank">(Video)</a></li>
+                <li>Dumbbell Bench Press - 3 sets x 12 reps <a href="https://www.youtube.com/results?search_query=dumbbell+bench+press" target="_blank">(Video)</a></li>
+                <li>Chest Fly Machine - 3 sets x 15 reps <a href="https://www.youtube.com/results?search_query=chest+fly+machine" target="_blank">(Video)</a></li>
+                <li>Triceps Kickbacks - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=triceps+kickbacks" target="_blank">(Video)</a></li>
+            </ul>
+            <h3>Friday: Full Body & Core</h3>
+            <ul>
+                <li>Deadlifts - 4 sets x 6 reps <a href="https://www.youtube.com/results?search_query=deadlifts" target="_blank">(Video)</a></li>
+                <li>Dumbbell Clean & Press - 3 sets x 8 reps <a href="https://www.youtube.com/results?search_query=dumbbell+clean+press" target="_blank">(Video)</a></li>
+                <li>Russian Twists - 3 sets x 10 reps per side <a href="https://www.youtube.com/results?search_query=russian+twists" target="_blank">(Video)</a></li>
+                <li>Hanging Knee Raises - 3 sets x 8 reps <a href="https://www.youtube.com/results?search_query=hanging+knee+raises" target="_blank">(Video)</a></li>
+            </ul>
+        </div>
+        
+        <div id="week2" class="workout">
+            <h2>Workout Plan - Week 2 (Light Weight / High Reps)</h2>
+            <h3>Monday: Arms & Shoulders</h3>
+            <ul>
+                <li>Arnold Press - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=arnold+press" target="_blank">(Video)</a></li>
+                <li>Concentration Curls - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=concentration+curls" target="_blank">(Video)</a></li>
+                <li>Front Raises - 3 sets x 15 reps <a href="https://www.youtube.com/results?search_query=front+raises" target="_blank">(Video)</a></li>
+                <li>Overhead Triceps Extensions - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=overhead+triceps+extension" target="_blank">(Video)</a></li>
+            </ul>
+            <h3>Tuesday: Back</h3>
+            <ul>
+                <li>Reverse-Grip Lat Pulldown - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=reverse+grip+lat+pulldown" target="_blank">(Video)</a></li>
+                <li>Single-Arm Dumbbell Row - 3 sets x 12 reps <a href="https://www.youtube.com/results?search_query=single+arm+dumbbell+row" target="_blank">(Video)</a></li>
+                <li>Face Pulls - 3 sets x 15 reps <a href="https://www.youtube.com/results?search_query=face+pulls" target="_blank">(Video)</a></li>
+            </ul>
+            <h3>Wednesday: Legs</h3>
+            <ul>
+                <li>Step-Ups - 3 sets x 12 reps per leg <a href="https://www.youtube.com/results?search_query=step+ups+exercise" target="_blank">(Video)</a></li>
+                <li>Leg Extensions - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=leg+extensions" target="_blank">(Video)</a></li>
+                <li>Standing Calf Raises - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=standing+calf+raises" target="_blank">(Video)</a></li>
+            </ul>
+            <h3>Thursday: Chest</h3>
+            <ul>
+                <li>Push-Ups (Knee or Regular) - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=push+ups" target="_blank">(Video)</a></li>
+                <li>Pec Deck Machine - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=pec+deck+machine" target="_blank">(Video)</a></li>
+                <li>Triceps Dips (Assisted) - 3 sets x 12-15 reps <a href="https://www.youtube.com/results?search_query=assisted+triceps+dips" target="_blank">(Video)</a></li>
+            </ul>
+            <h3>Friday: Full Body & Core</h3>
+            <ul>
+                <li>Kettlebell Swings - 3 sets x 15 reps <a href="https://www.youtube.com/results?search_query=kettlebell+swings" target="_blank">(Video)</a></li>
+                <li>Medicine Ball Slams - 3 sets x 12 reps <a href="https://www.youtube.com/results?search_query=medicine+ball+slams" target="_blank">(Video)</a></li>
+                <li>Plank Hold - 3 rounds x 30 seconds <a href="https://www.youtube.com/results?search_query=plank+hold" target="_blank">(Video)</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleWorkout() {
+            let week1 = document.getElementById("week1");
+            let week2 = document.getElementById("week2");
+            
+            if (week1.classList.contains("active")) {
+                week1.classList.remove("active");
+                week2.classList.add("active");
+            } else {
+                week2.classList.remove("active");
+                week1.classList.add("active");
+            }
+        }
+    </script>
+</body>
+</html>
