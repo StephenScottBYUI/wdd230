@@ -1,0 +1,83 @@
+{
+    "lessons": [
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://stephenscottbyui.github.io/wdd230/images/w3-css-combinators.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/StephenScottBYUI/pen/zxOmppJ",
+                    "title": "Lesson 03 Codepen"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/StephenScottBYUI/pen/GgKPYeW",
+                    "title": "CSS Pseudo-Class"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://stephenscottbyui.github.io/wdd230/lesson05/bom.html",
+                    "title": "Book of Mormon - Favorite Scripture"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "https://stephenscottbyui.github.io/wdd230/lesson03/images/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "lesson06/presentation.html",
+                    "title": "AB Testing Presentation"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "Book of Mormon Favorite Scripture"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "form.html",
+                    "title": "Form"
+                }
+            ]
+        }
+    ]
+}
