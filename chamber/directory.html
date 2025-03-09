@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willingboro Chamber of Commerce</title>
+    <meta name="description" content="Willingboro Chamber of Commerce Homepage">
+    <meta name="author" content="Stephen Scott">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="styles/colors-and-fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <!--Open Graph Meta Tags-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stephenscottbyui.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://stephenscottbyui.github.io/wdd230/chamber/images/willingboro-meta.webp">
+    <meta property="og:title" content="Willingboro Chamber of Commerce Homepage">
+</head>
+
+<body>
+    <header>
+        <h1 class="visually-hidden">Willingboro Chamber of Commerce</h1>
+        <div class="dark-mode">
+            <p>Dark Mode:</p>
+            <div id="switch">
+                <label for="darkModeToggle" class="switch">
+                    <span class="visually-hidden">Toggle Dark Mode</span>
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <a id="menu" href="#" aria-label="Open navigation menu"></a>
+
+        <div class="hero-box">
+            <a id="join-us" href="join.html">Join Us</a>
+            <picture class="hero">
+                <source srcset="images/hero-img.webp" media="(min-width:1000px)">
+
+                <source srcset="images/hero-img-med.webp" media="(min-width:500px)">
+
+                <img class="hero" src="images/hero-img-sm.webp" alt="Downtown Willingboro">
+            </picture>
+
+        </div>
+        <a class="logo" href="index.html">
+            <picture class="logo-img">
+                <source srcset="images/willingboro-logo.webp" media="(min-width:500px)">
+
+                <source srcset="images/willingboro-logo-sm.webp" media="(max-width:499px)">
+
+                <img class="logo-img" src="images/willingboro-logo-sm.webp" alt="Willingboro Chamber of Commerce logo">
+            </picture>
+        </a>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="discover.html">Discover Willingboro</a></li>
+            <li><a href="local-businesses.html">Local Businesses</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="board.html">About Us</a></li>
+            <li><a href="resources.html">Business Resources</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="menu">
+            <button id="gridView">⏹️Grid</button>
+            <button id="listView">📄List</button>
+        </div>
+        <article id="directoryList" class="grid"></article>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span></p>
+        <p class="emoji">Stephen Scott - WDD 230 Chamber of Commerce Project</p>
+        <p id="lastModified"></p>
+
+
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/directory.js"></script>
+
+
+</body>
+
+</html>

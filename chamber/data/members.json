@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Tech Innovators Inc.",
+            "address": "123 Silicon Avenue, Willingboro, NJ 08046",
+            "phone": "(555) 123-4567",
+            "website": "http://www.techinnovators.com",
+            "image": "images/tech_innovators.webp",
+            "membership_level": "Gold Membership",
+            "description": "Leading provider of innovative tech solutions for businesses of all sizes."
+        },
+        {
+            "name": "Green Thumb Landscaping",
+            "address": "456 Garden Lane, Willingboro, NJ 08046",
+            "phone": "(555) 234-5678",
+            "website": "http://www.greenthumb-landscaping.com",
+            "image": "images/green_thumb_landscaping.webp",
+            "membership_level": "Silver Membership",
+            "description": "Professional landscaping and garden design services to beautify your outdoor spaces."
+        },
+        {
+            "name": "Culinary Delights Catering",
+            "address": "789 Gourmet Street, Willingboro, NJ 08046",
+            "phone": "(555) 345-6789",
+            "website": "http://www.culinarydelightscatering.com",
+            "image": "images/culinary_delights.webp",
+            "membership_level": "Bronze Membership",
+            "description": "Exceptional catering services for events, offering a wide range of cuisines."
+        },
+        {
+            "name": "Healthy Living Non-Profit",
+            "address": "101 Wellness Way, Willingboro, NJ 08046",
+            "phone": "(555) 456-7890",
+            "website": "http://www.healthylivingnonprofit.org",
+            "image": "images/healthy_living.webp",
+            "membership_level": "Non-Profit Membership",
+            "description": "Dedicated to promoting health and wellness in the community through various programs."
+        },
+        {
+            "name": "Artisan Crafts Boutique",
+            "address": "202 Handmade Blvd, Willingboro, NJ 08046",
+            "phone": "(555) 567-8901",
+            "website": "http://www.artisancraftsboutique.com",
+            "image": "images/artisan_crafts.webp",
+            "membership_level": "Silver Membership",
+            "description": "A boutique showcasing handcrafted goods from local artisans."
+        },
+        {
+            "name": "Fitness First Gym",
+            "address": "303 Muscle Street, Willingboro, NJ 08046",
+            "phone": "(555) 678-9012",
+            "website": "http://www.fitnessfirstgym.com",
+            "image": "images/fitness_first.webp",
+            "membership_level": "Bronze Membership",
+            "description": "State-of-the-art gym facilities with personal training and group classes."
+        },
+        {
+            "name": "Bright Minds Tutoring",
+            "address": "404 Knowledge Ave, Willingboro, NJ 08046",
+            "phone": "(555) 789-0123",
+            "website": "http://www.brightmindstutoring.com",
+            "image": "images/bright_minds.webp",
+            "membership_level": "Gold Membership",
+            "description": "Personalized tutoring services for students of all ages to achieve academic success."
+        }
+    ]
+}
