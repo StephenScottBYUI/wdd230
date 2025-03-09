@@ -83,7 +83,21 @@ header h1 {
 
 }
 
+#linkList {
+    list-style-type: none;
+}
 
+.list-container a {
+    text-decoration: none;
+}
+
+.list-container a::after {
+    content: ' | ';
+}
+
+.list-container a:last-child::after {
+    content: '';
+}
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
