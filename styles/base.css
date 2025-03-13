@@ -28,6 +28,13 @@ header {
 
 }
 
+#weather-container div {
+    display: flex;
+    flex-direction: column;
+    max-width: 75px;
+    margin: 0 auto;
+}
+
 header img {
     grid-column: 2/3;
     margin: auto 0;
@@ -199,10 +206,14 @@ main h2 {
 }
 
 #info {
+
     border: 1px solid var(--color-on-light);
     text-align: center;
 
+
 }
+
+
 
 #info p div {
     display: flex;
@@ -215,6 +226,7 @@ main h2 {
 
 .card {
     margin-bottom: 1rem;
+    box-sizing: border-box;
 }
 
 .card h3,
