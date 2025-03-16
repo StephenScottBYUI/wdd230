@@ -1,7 +1,7 @@
 
 const currentTemp = document.querySelector('#current-temp');
 
-const url = 'https://api.openweathermap.org/data/2.5//weather?lat=40.03&lon=-74.88&appid=5ab5519a95d1263ae62cc6c71b11fa35&units=imperial';
+const url = 'api.openweathermap.org/data/2.5/forecast?lat=40.03&lon=-74.88&appid=5ab5519a95d1263ae62cc6c71b11fa35&units=imperial';
 
 async function apiFetch() {
     try {

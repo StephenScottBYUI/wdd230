@@ -67,6 +67,8 @@
         </ul>
     </nav>
     <main>
+        <section id="banner"><button id="close-button"></button></section>
+        <!--Attribution for the x icon <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by joalfa - Flaticon</a>-->
         <section class="scrolling-container">
             <div class="scrolling-content">
                 <p>News & Events:<br class="special-break"> This will scroll in mobile and display in block form in
@@ -120,9 +122,13 @@
         <section class="weather-box">
             <h2>Weather</h2>
             <div class="weather-info">
-                <p class="temp weather">Temperature: <span id="tempNumber">34</span>° F</p>
-                <p class="wind-speed weather">Wind Speed: <span id="windNumber">12</span> MPH</p>
+                <p>The current temperature in Willingboro, NJ is <strong><span id="current-temp"></span></strong></p>
+                <p class="wind-speed weather">Wind Speed: <span id="windNumber"></span> MPH</p>
                 <p class="wind-chill weather">Wind Chill: <span id="windChill"></span></p>
+                <div id="weather-container">
+                    <h3>3-Day Forecast</h3>
+                </div>
+
             </div>
         </section>
     </main>
@@ -134,9 +140,14 @@
 
     </footer>
     <script src="../scripts/getdates.js"></script>
+
     <script src="scripts/darkMode.js"></script>
-    <script src="scripts/heroText.js"></script>
-    <script src="scripts/windChill.js"></script>
+    <script src="scripts/weather.js"></script>
+
+
+
+
+
 
 </body>
 
