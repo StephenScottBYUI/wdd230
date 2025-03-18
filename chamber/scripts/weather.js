@@ -3,13 +3,13 @@ const currentTemp = document.querySelector('#current-temp');
 
 
 const url = 'https://api.openweathermap.org/data/2.5//forecast?lat=40.03&lon=-74.88&appid=5ab5519a95d1263ae62cc6c71b11fa35&units=imperial';
-
+const tempURL = 'https://api.openweathermap.org/data/2.5//weather?lat=40.03&lon=-74.88&appid=5ab5519a95d1263ae62cc6c71b11fa35&units=imperial';
 async function apiFetch() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-
+            apiFetchTemp();
             displayResults(data);
             calcWindChill(data);
             meetAndGreet();
@@ -22,12 +22,31 @@ async function apiFetch() {
 
 }
 
+async function apiFetchTemp() {
+    try {
+        const response = await fetch(tempURL);
+        if (response.ok) {
+            const data1 = await response.json();
+            const tempN = data1.main.temp;
+            const temp = parseInt(tempN);
+            console.log(temp);
+            return temp;
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+
 apiFetch();
 
-const displayResults = (data) => {
-    currentTemp.innerHTML = `${Math.round(data.list[0].main.temp)}&deg;F`;
+const displayResults = async (data) => {
+    const tempValue = await apiFetchTemp();
+    currentTemp.innerHTML = `${Math.round(parseInt(tempValue))}&deg;F`;
 
-    const dailyForecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(1, 4);
+    const dailyForecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
 
     console.table(dailyForecast);
 
