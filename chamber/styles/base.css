@@ -386,7 +386,9 @@ main {
     margin-top: 1rem;
 }
 
-.local {
+.local, .local-events span {
+    display: inline-block;
+    width: 100%;
     padding: .5rem 1rem;
     border: 1px solid black;
     margin-bottom: 1rem;
@@ -632,6 +634,8 @@ footer {
 
 
 }
+
+
 
 
 
