@@ -352,7 +352,8 @@ main {
 
 .scrolling-content {
     display: flex;
-    animation: scrollText 60s linear infinite;
+    animation: scrollText 90s linear infinite;
+    min-width: fit-content;
 }
 
 
