@@ -351,19 +351,19 @@ main {
 }
 
 .scrolling-content {
-    display: inline-block;
-    animation: scrollText 45s linear infinite;
+    display: flex;
+    animation: scrollText 60s linear infinite;
 }
 
 
 
 @keyframes scrollText {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
