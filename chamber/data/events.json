@@ -1,0 +1,34 @@
+{
+    "events": [
+      {
+        "name": "Spring Business Networking Mixer",
+        "date": "2025-04-10",
+        "location": "Willingboro Community Center, 123 Main St, Willingboro, NJ",
+        "description": "Join local business owners and professionals for an evening of networking, refreshments, and community building."
+      },
+      {
+        "name": "Willingboro Farmers' Market Opening Day",
+        "date": "2025-05-05",
+        "location": "Town Square Park, Willingboro, NJ",
+        "description": "Celebrate the opening day of the seasonal farmers' market featuring fresh local produce, handmade goods, and family-friendly activities."
+      },
+      {
+        "name": "Small Business Workshop: Digital Marketing Essentials",
+        "date": "2025-04-22",
+        "location": "Chamber of Commerce HQ, 456 Commerce Blvd, Willingboro, NJ",
+        "description": "A free workshop providing tips and strategies for small businesses to improve their digital marketing presence."
+      },
+      {
+        "name": "Community Clean-Up Day",
+        "date": "2025-04-27",
+        "location": "Various locations throughout Willingboro, NJ",
+        "description": "Volunteer to help keep our community clean! All ages welcome. Supplies and refreshments provided."
+      },
+      {
+        "name": "Annual Chamber Gala & Awards Night",
+        "date": "2025-06-15",
+        "location": "Willingboro Grand Hotel Ballroom, 789 Celebration Ave, Willingboro, NJ",
+        "description": "An elegant evening recognizing outstanding local businesses and leaders. Includes dinner, awards ceremony, and entertainment."
+      }
+    ]
+  }

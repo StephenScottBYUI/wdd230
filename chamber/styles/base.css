@@ -347,12 +347,12 @@ main {
     border: 2px solid #333;
     padding: .2rem 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    max-height: 500px;
+    
 }
 
 .scrolling-content {
     display: inline-block;
-    animation: scrollText 10s linear infinite;
+    animation: scrollText 45s linear infinite;
 }
 
 

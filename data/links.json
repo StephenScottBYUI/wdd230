@@ -78,6 +78,15 @@
                     "title": "Form"
                 }
             ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "prophets.html",
+                    "title": "Prophets List"
+                }
+            ]
         }
     ]
 }

@@ -1,54 +1,46 @@
-
 const currentTemp = document.querySelector('#current-temp');
 
 
-const url = 'https://api.openweathermap.org/data/2.5//forecast?lat=40.03&lon=-74.88&appid=5ab5519a95d1263ae62cc6c71b11fa35&units=imperial';
+const forecastURL = 'https://api.openweathermap.org/data/2.5//forecast?lat=40.03&lon=-74.88&appid=0a58d1b99094fd6acb244badfaff5049&units=imperial';
 const tempURL = 'https://api.openweathermap.org/data/2.5//weather?lat=40.03&lon=-74.88&appid=5ab5519a95d1263ae62cc6c71b11fa35&units=imperial';
 async function apiFetch() {
     try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            apiFetchTemp();
-            displayResults(data);
-            calcWindChill(data);
-            meetAndGreet();
+        // Fetch BOTH APIs
+        const [forecastResponse, tempResponse] = await Promise.all([
+            fetch(forecastURL),
+            fetch(tempURL)
+        ]);
+
+        if (forecastResponse.ok && tempResponse.ok) {
+            const forecastData = await forecastResponse.json();
+            const tempData = await tempResponse.json();
+
+            displayCurrentWeather(tempData);  
+            displayForecast(forecastData);    
+            calcWindChill(tempData);          
+                               
+
         } else {
-            throw Error(await response.text());
+            throw Error('Error fetching weather data');
         }
     } catch (error) {
         console.log(error);
     }
-
 }
 
-async function apiFetchTemp() {
-    try {
-        const response = await fetch(tempURL);
-        if (response.ok) {
-            const data1 = await response.json();
-            const tempN = data1.main.temp;
-            const temp = parseInt(tempN);
-            console.log(temp);
-            return temp;
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
 
-}
 
 apiFetch();
 
-const displayResults = async (data) => {
-    const tempValue = await apiFetchTemp();
-    currentTemp.innerHTML = `${Math.round(parseInt(tempValue))}&deg;F`;
+function displayCurrentWeather(tempData) {
+    const temp = tempData.main.temp;
+    currentTemp.innerHTML = `${Math.round(temp)}&deg;F`;
+}
 
+const displayForecast = async (data) => {
     const dailyForecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
 
-    console.table(dailyForecast);
+    
 
     dailyForecast.forEach((forecast) => {
         let iconsrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
@@ -83,9 +75,9 @@ const displayResults = async (data) => {
 
 }
 
-const calcWindChill = (data) => {
-    const temp = parseFloat(data.list[0].main.temp);
-    const wind = parseFloat(data.list[0].wind.speed);
+const calcWindChill = (tempData) => {
+    const temp = parseFloat(tempData.main.temp);
+    const wind = parseFloat(tempData.wind.speed);
 
     if (temp >= 50 || wind <= 3) {
         document.querySelector('#windChill').textContent = "N/A";
@@ -98,45 +90,5 @@ const calcWindChill = (data) => {
     }
 }
 
-function meetAndGreet() {
-    const bannerBox = document.getElementById("banner");
-    const today = new Date().getDay();
 
-
-    if (today >= 1 && today <= 3) {
-        let bannerText = document.createElement('p');
-        let closeButton = document.getElementById('close-button');
-        let xIcon = document.createElement('img');
-
-        xIcon.setAttribute('src', 'images/x-mark.png');
-        xIcon.setAttribute('alt', 'close button');
-        xIcon.setAttribute('class', 'close_button');
-
-
-
-        closeButton.setAttribute('style', 'background: none; border: none; cursor: pointer;');
-        closeButton.appendChild(xIcon);
-
-        bannerText.textContent = 'Come join us this Wednesday at 7pm for the Willingboro Chamber of Commerce meet and greet!';
-
-        bannerBox.appendChild(bannerText);
-
-    }
-    else {
-        bannerBox.setAttribute('class', 'visually-hidden');
-        console.log(today);
-    };
-
-}
-
-const button = document.getElementById('close-button');
-
-
-function closeBanner() {
-    const bannerBox = document.getElementById("banner");
-    bannerBox.setAttribute('class', 'visually-hidden');
-
-};
-
-button.addEventListener('click', closeBanner);
 
