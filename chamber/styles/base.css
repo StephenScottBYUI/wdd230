@@ -468,7 +468,7 @@ footer {
 }
 
 .required {
-    color: red;
+    color: var(--required-color);
 }
 
 .lvl-desc {
