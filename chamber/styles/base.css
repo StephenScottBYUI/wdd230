@@ -500,6 +500,7 @@ footer {
     padding: 0.5rem;
     background-color: var(--text-box-color);
     height: 100%;
+    overflow-wrap: break-word;
 }
 
 .grid {
