@@ -4,11 +4,11 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "lesson02/media-query.html",
+                    "url": "lessons/lesson02/media-query.html",
                     "title": "Media Queries"
                 },
                 {
-                    "url": "lesson02/design-principles.html",
+                    "url": "lessons/lesson02/design-principles.html",
                     "title": "Design Principles"
                 }
             ]
@@ -39,7 +39,7 @@
             "lesson": "05",
             "links": [
                 {
-                    "url": "https://stephenscottbyui.github.io/wdd230/lesson05/bom.html",
+                    "url": "https://stephenscottbyui.github.io/wdd230/lessons/lesson05/bom.html",
                     "title": "Book of Mormon - Favorite Scripture"
                 }
             ]
@@ -48,11 +48,11 @@
             "lesson": "06",
             "links": [
                 {
-                    "url": "https://stephenscottbyui.github.io/wdd230/lesson03/images/landscape.webp",
+                    "url": "https://stephenscottbyui.github.io/wdd230/lessons/lesson03/images/landscape.webp",
                     "title": "Webp"
                 },
                 {
-                    "url": "lesson06/presentation.html",
+                    "url": "lessons/lesson06/presentation.html",
                     "title": "AB Testing Presentation"
                 }
             ]
@@ -61,11 +61,11 @@
             "lesson": "07",
             "links": [
                 {
-                    "url": "lesson07/lazyload.html",
+                    "url": "lessons/lesson07/lazyload.html",
                     "title": "Lazy Loading"
                 },
                 {
-                    "url": "lesson07/bom.html",
+                    "url": "lessons/lesson07/bom.html",
                     "title": "Book of Mormon Favorite Scripture"
                 }
             ]
