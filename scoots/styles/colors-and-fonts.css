@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
 :root{
    --heading-color: #1C3F60;
    --button-color:  #E63946;
@@ -5,4 +9,7 @@
    --text-color: #1A1A1A;
    --special-color: #2EC4B6;
    --light-text-color: #E0FFFF;
+   --special-font: 'Cedarville Cursive', Georgia, sans-serif;
+   --text-font: 'Londrina Solid', Arial, sans-serif; 
+   --heading-font: 'Belanosima', Arial, sans-serif;
 }

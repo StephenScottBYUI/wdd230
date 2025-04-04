@@ -6,7 +6,9 @@
     <title>Scoots Rentals</title>
     <meta name="description" content="Scoots motorized scooter Rentals">
     <meta name="author" content="Stephen Scott">
-    <link rel="stylesheet" href="styles/colors-and-fonts.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/colors-and-fonts.css" id="theme-stylesheet">
+
     <link rel="icon" type="image/ico" href="favicon.ico">
 
      <!--Open Graph Meta Tags-->
@@ -16,22 +18,60 @@
      <meta property="og:title" content="Scoots motorized scooter Rentals">
 </head>
 <body>
-    <header>
-        <nav>
-
+    <header class="grid">
+        <img src="images/scoots-logo-light.webp" alt="Logo of Scoots" id="logo">
+        <nav class="grid">
+            <a href="rental-info.html">Rental Info</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="button-container"><a href="rent.html" class="button">Rent Now</a></div>
         </nav>
-        <div id="weatherPopUp">
-
-        </div>
+        
         <div class="hero">
-
+            <picture>
+                <source srcset="images/scoots-hero-mobile.webp" media="(max-width:430px)">
+                <source srcset="images/scoots-hero-medium.webp" media="(max-width:1023px)">
+                <source srcset="images/scoots-hero-desktop.webp" media="(min-width:1024px)">
+                <img src="images/scoots-hero-mobile.webp" alt="A picture of the type of vehicles scoots has to offer">
+            </picture>
         </div>
 
     </header>
-    <main>
-        <section class="weather" id="weatherContainer">
+    <main class="grid">
+        <div id="weatherPopUp" class="container">
+
+        </div>
+        <section class="weather container" id="weatherContainer">
              
         </section>
+        <section class="container rental-types">
+
+        </section>
+        <section class="description">
+            <p>Ready to explore Cozumel like a local? At Scoots, we make it fun, easy, and unforgettable. Whether you're here for a day or a week, our fleet of stylish, well-maintained scooters lets you cruise the coastline, zip through downtown, and discover hidden beaches at your own pace.<br><br>
+
+                Located just minutes from the ferry terminal, Scoots is your first stop for adventure. Our friendly, bilingual staff will get you on the road in no time with quick rentals, safety gear, and insider tips on where to ride. No tour buses, no rigid schedules — just the freedom to explore paradise on your own terms.<br><br>
+            
+                Whether you’re chasing sunsets, beach hopping, or just feeling the breeze in your hair, there’s no better way to experience Cozumel than with Scoots.
+            </p>
+                
+        </section>
     </main>
+    <footer>
+        <section class="socials">
+
+        </section>
+        <section class="grid">
+            <p>📍</p>
+            <p>Avenida del Sol #148<br>
+                Colonia Centro<br>
+                Cozumel, Q.R., México<br>
+                C.P. 77600<br>
+                </p>
+            <p>📞</p>
+            <p>+52 (987) 555-0123<</p>
+
+        </section>
+        <p>Stephen Scott - WDD230 Final Project</p>
+    </footer>
 </body>
 </html>

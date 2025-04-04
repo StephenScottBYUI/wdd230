@@ -1,0 +1,223 @@
+{
+    "rentals": [
+        {
+        "type": "Honda Motor Scooters",
+        "models": [
+            {
+                "name": "Honda Metropolitan",
+                "image": "images/metro.webp",
+                "description": "49cc",
+                "persons": "1 Person",
+                "price": [
+                    {
+                        "type": "Reservation",
+                        "cost":[
+                            {
+                                "time": "Half Day (3hrs)",
+                                "amount": "$20"
+                            },
+                            {
+                                "time": "Full Day",
+                                "amount": "$30"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Walk-In",
+                        "cost":[
+                            {
+                                "time": "Half Day (3hrs)",
+                                "amount": "$25"
+                            },
+                            {
+                                "time":"Full Day",
+                                "amount":"$35"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Honda Dio",
+                "image": "images/dio.webp",
+                "description": "110cc",
+                "persons": "2 Person",
+                "price": [
+                    {
+                        "type": "Reservation",
+                        "cost":[
+                            {
+                                "time": "Half Day (3hrs)",
+                                "amount": "$30"
+                            },
+                            {
+                                "time": "Full Day",
+                                "amount": "$40"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Walk-In",
+                        "cost":[
+                            {
+                                "time": "Half Day (3hrs)",
+                                "amount": "$35"
+                            },
+                            {
+                                "time":"Full Day",
+                                "amount":"$45"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Honda PCX150",
+                "image": "images/pcx150.webp",
+                "description": "149cc",
+                "persons": "2 Person",
+                "price": [
+                    {
+                        "type": "Reservation",
+                        "cost":[
+                            {
+                                "time": "Half Day (3hrs)",
+                                "amount": "$40"
+                            },
+                            {
+                                "time": "Full Day",
+                                "amount": "$50"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Walk-In",
+                        "cost":[
+                            {
+                                "time": "Half Day (3hrs)",
+                                "amount": "$45"
+                            },
+                            {
+                                "time":"Full Day",
+                                "amount":"$55"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+        },
+        {
+            "type": "Side-by-Side ATVs",
+            "models": [
+                {
+                    "name": "Honda Pioneer 1000",
+                    "image": "images/pioneer.webp",
+                    "description": "N/A",
+                    "persons": "4 Person",
+                    "price": [
+                        {
+                            "type": "Reservation",
+                            "cost":[
+                                {
+                                    "time": "Half Day (3hrs)",
+                                    "amount": "$50"
+                                },
+                                {
+                                    "time": "Full Day",
+                                    "amount": "$70"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Walk-In",
+                            "cost":[
+                                {
+                                    "time": "Half Day (3hrs)",
+                                    "amount": "$60"
+                                },
+                                {
+                                    "time":"Full Day",
+                                    "amount":"$80"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+            },
+            {
+                "type": "Jeeps",
+                "models": [
+                    {
+                        "name": "Jeep Wrangler",
+                        "image": "images/wrangler1.webp",
+                        "description": "4 door manuel with A/C",
+                        "persons": "5 Person",
+                        "price": [
+                            {
+                                "type": "Reservation",
+                                "cost":[
+                                    {
+                                        "time": "Half Day (3hrs)",
+                                        "amount": "$70"
+                                    },
+                                    {
+                                        "time": "Full Day",
+                                        "amount": "$100"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Walk-In",
+                                "cost":[
+                                    {
+                                        "time": "Half Day (3hrs)",
+                                        "amount": "$85"
+                                    },
+                                    {
+                                        "time":"Full Day",
+                                        "amount":"$125"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Jeep Wrangler",
+                        "image": "images/wrangler2.webp",
+                        "description": "2 door, open air, manuel",
+                        "persons": "4 Person",
+                        "price": [
+                            {
+                                "type": "Reservation",
+                                "cost":[
+                                    {
+                                        "time": "Half Day (3hrs)",
+                                        "amount": "$60"
+                                    },
+                                    {
+                                        "time": "Full Day",
+                                        "amount": "$85"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Walk-In",
+                                "cost":[
+                                    {
+                                        "time": "Half Day (3hrs)",
+                                        "amount": "$70"
+                                    },
+                                    {
+                                        "time":"Full Day",
+                                        "amount":"$90"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+                }
+    ]
+}
