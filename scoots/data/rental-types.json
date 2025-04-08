@@ -6,7 +6,7 @@
             {
                 "name": "Honda Metropolitan",
                 "image": "images/metro.webp",
-                "description": "49cc",
+                "description": "This 49cc scooter is stylish and beginner-friendly, this compact scooter is ideal for relaxed urban rides and navigating Cozumel’s charming streets.",
                 "persons": "1 Person",
                 "price": [
                     {
@@ -40,7 +40,7 @@
             {
                 "name": "Honda Dio",
                 "image": "images/dio.webp",
-                "description": "110cc",
+                "description": "This 110cc scooter is lightweight and fuel-efficient, the Dio is perfect for quick, easy trips around town or beach hopping with island vibes.",
                 "persons": "2 Person",
                 "price": [
                     {
@@ -74,7 +74,7 @@
             {
                 "name": "Honda PCX150",
                 "image": "images/pcx150.webp",
-                "description": "149cc",
+                "description": "This 149cc has a bit more power and comfort, the PCX150 is great for longer coastal rides and pairs performance with scooter simplicity.",
                 "persons": "2 Person",
                 "price": [
                     {
@@ -113,7 +113,7 @@
                 {
                     "name": "Honda Pioneer 1000",
                     "image": "images/pioneer.webp",
-                    "description": "N/A",
+                    "description": "Built for off-road fun, this versatile UTV offers seating for four and is perfect for adventurous routes through Cozumel’s wilder terrain.",
                     "persons": "4 Person",
                     "price": [
                         {
@@ -152,7 +152,7 @@
                     {
                         "name": "Jeep Wrangler",
                         "image": "images/wrangler1.webp",
-                        "description": "4 door manuel with A/C",
+                        "description": "4 door manuel with A/C. Ideal for families or groups, this spacious and air-conditioned Jeep provides comfort, security, and power for exploring Cozumel's beaches and inland adventures.",
                         "persons": "5 Person",
                         "price": [
                             {
@@ -186,7 +186,7 @@
                     {
                         "name": "Jeep Wrangler",
                         "image": "images/wrangler2.webp",
-                        "description": "2 door, open air, manuel",
+                        "description": "2 door, open air, manuel. Perfect for island cruising, this rugged open-air Jeep lets you feel the breeze and enjoy Cozumel’s stunning coastal views with freedom and style.",
                         "persons": "4 Person",
                         "price": [
                             {

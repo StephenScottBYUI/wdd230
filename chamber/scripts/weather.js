@@ -15,10 +15,10 @@ async function apiFetch() {
             const forecastData = await forecastResponse.json();
             const tempData = await tempResponse.json();
 
-            displayCurrentWeather(tempData);  
-            displayForecast(forecastData);    
-            calcWindChill(tempData);          
-                               
+            displayCurrentWeather(tempData);
+            displayForecast(forecastData);
+            calcWindChill(tempData);
+
 
         } else {
             throw Error('Error fetching weather data');
@@ -40,7 +40,7 @@ function displayCurrentWeather(tempData) {
 const displayForecast = async (data) => {
     const dailyForecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
 
-    
+
 
     dailyForecast.forEach((forecast) => {
         let iconsrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
