@@ -1,0 +1,27 @@
+@media (min-width: 550px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2rem;
+    }
+
+    .rental-types {
+        grid-column: 1/2;
+        grid-row: span 2;
+    }
+
+    .description {
+        grid-column: 2/3;
+        height: auto;
+    }
+
+    .weather-section {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: auto;
+    }
+
+    #weatherPopUp {
+        max-width: 500px;
+    }
+}

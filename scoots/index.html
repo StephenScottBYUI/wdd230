@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/colors-and-fonts.css" id="theme-stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <link rel="icon" type="image/ico" href="favicon.ico">
 
@@ -22,19 +24,23 @@
 
 <body>
     <header class="grid">
-        <picture>
-            <source srcset="images/scoots-logo-small.webp" media="(max-width:430px)">
-            <source srcset="images/scoots-logo-medium.webp" media="(max-width:1023px)">
-            <source srcset="images/scoots-logo-large.webp" media="(min-width:1024px)">
-            <img src="images/scoots-logo-small.webp" alt="A picture of the type of vehicles scoots has to offer">
-        </picture>
-        <nav class="grid">
-            <a href="rental-info.html">Rental Info</a>
-            <a href="contact.html">Contact Us</a>
-
-        </nav>
-
-        <div class="button-container"><a href="rent.html" class="button">Rent Now</a></div>
+        <div id="topbar" class="grid">
+            <a href="index.html">
+                <picture>
+                    <source srcset="images/scoots-logo-small.webp" media="(max-width:430px)">
+                    <source srcset="images/scoots-logo-medium.webp" media="(max-width:1023px)">
+                    <source srcset="images/scoots-logo-large.webp" media="(min-width:1024px)">
+                    <img class="logo" src="images/scoots-logo-small.webp"
+                        alt="A picture of the type of vehicles scoots has to offer">
+                </picture>
+            </a>
+            <a id="menu" href="#" aria-label="Open navigation menu"></a>
+            <nav class="grid navigation">
+                <a href="rental-info.html">Rental Info</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <div class="button-container container"><a href="rent.html" class="button">Rent Now</a></div>
 
         <div class="hero">
             <picture>
@@ -48,16 +54,16 @@
     </header>
     <main class="grid">
         <div id="weatherPopUp" class="container">
-            <button class="close-btn" onclick="closePopUp()">x</button>
+            <button class="close-btn" onclick="closePopUp()">X</button>
             <p>Todays high temperature is <span id="maxTemp"></span></p>
         </div>
-        <section class="weather container" id="weatherContainer">
-
+        <section class="weather-section bottom">
+            <div class="weather container" id="weatherContainer"></div>
         </section>
-        <section class="container rental-types" id="rentalDescription">
-
+        <section class="container rental-types grid middle" id="rentalDescription">
+            <h2>Rental Types</h2>
         </section>
-        <section class="description">
+        <section class="description top">
             <p>Ready to explore Cozumel like a local? At Scoots, we make it fun, easy, and unforgettable. Whether you're
                 here for a day or a week, our fleet of stylish, well-maintained scooters lets you cruise the coastline,
                 zip through downtown, and discover hidden beaches at your own pace.<br><br>
@@ -73,27 +79,28 @@
 
         </section>
     </main>
-    <footer>
+    <footer class="flex">
         <section class="socials">
             <a href="https://www.facebook.com/"><img src="images/facebook-icon.webp" alt="Facebook Icon"></a>
             <a href="https://x.com/?lang=en"><img src="images/x-icon.webp" alt="X Icon"></a>
             <a href="https://www.instagram.com/"><img src="images/instagram-icon.webp" alt="Instagram Icon"></a>
         </section>
-        <section class="grid">
-            <p>📍</p>
-            <p>Avenida del Sol #148<br>
+        <section class="grid contacts">
+            <p class="right-align">📍</p>
+            <p class="left-align">Avenida del Sol #148<br>
                 Colonia Centro<br>
                 Cozumel, Q.R., México<br>
                 C.P. 77600<br>
             </p>
-            <p>📞</p>
-            <p>+52 (987) 555-0123<< /p>
+            <p class="right-align">📞</p>
+            <p class="left-align">+52 (987) 555-0123</p>
 
         </section>
         <p>Stephen Scott - WDD230 Final Project</p>
     </footer>
     <script src="scripts/rentals.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
