@@ -401,3 +401,11 @@ main h1 {
 #contact-edits :nth-child(4) {
     font-size: 1rem;
 }
+
+#reserve {
+    row-gap: 1rem;
+}
+
+#reserve-now {
+    max-width: 100px;
+}

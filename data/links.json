@@ -87,6 +87,15 @@
                     "title": "Prophets List"
                 }
             ]
+        },
+        {
+            "lesson": "14",
+            "links": [
+                {
+                    "url": "scoots/index.html",
+                    "title": "Scoots Final Project"
+                }
+            ]
         }
     ]
 }

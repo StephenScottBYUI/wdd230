@@ -52,7 +52,7 @@
         </div>
 
     </header>
-    <main class="grid">
+    <main class="grid" id="contactMain">
         <h1>Reservations</h1>
         <section class="terms">
             <h2>Terms and Conditions</h2>
@@ -74,8 +74,67 @@
                 </li>
             </ol>
         </section>
-        <section class="reservation-form">
+        <section class="reservation-form ">
+            <form action="thanks.html" method="get" id="reserve" class="grid">
+                <label for="fname">First Name:*<br>
+                    <input type="text" id="fname" name="first-name" required>
+                </label>
+                <label for="lname">Last Name:*<br>
+                    <input type="text" id="lname" name="last-name" required>
+                </label>
+                <label for="line1-address">Address line 1:*</span><br>
+                    <input type="text" id="line1-address" name="line1-address" required>
+                </label>
+                <label for="line2-address">line 2:*</span><br>
+                    <input type="text" id="line2-address" name="line2-address" required>
+                </label>
+                <label for="line3-address">line 3:</span><br>
+                    <input type="text" id="line3-address" name="line3-address">
+                </label>
+                <label for="email">Email:*<br>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </label>
+                <label for="phone">Phone:<br>
+                    <input type="tel" id="phone" name="phone" placeholder="555-555-5555"
+                        pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$">
+                </label>
+                <label for="cruise">Cruise line (if applicable):</span><br>
+                    <input type="text" id="cruise" name="cruise">
+                </label>
+                <label for="rental-length">Rental Length*<br>
+                    <select name="rental-length" id="rental-length" required>
+                        <option value="" disabled selected hidden>Select rental length</option>
+                        <option value="hd">Half-day</option>
+                        <option value="fd">Full-day</option>
+                        <option value="md">Multiple days</option>
+                    </select>
 
+                </label>
+                <label for="pickup-date">Pickup Date:*<br>
+                    <input type="date" id="pickup-date" name="pickup-date" required>
+                </label>
+                <label for="return-date">Return Date:*<br>
+                    <input type="date" id="return-date" name="return-date" required>
+                </label>
+                <label for="vehicle-type">Vehicle Type*<br>
+                    <select name="vehicle-type" id="vehicle-type" required>
+                        <option value="" disabled selected hidden>Select vehicle type</option>
+                        <option value="metro">Honda Metroplitan</option>
+                        <option value="dio">Honda Dio</option>
+                        <option value="pcx150">Honda PCX150</option>
+                        <option value="pioneer">Honda Pioneer 1000</option>
+                        <option value="4door">Jeep Wrangler 4-Door</option>
+                        <option value="2door">Jeep Wrangler 2-Door</option>
+                    </select>
+
+                </label>
+                <label for="misc">Special Accomodations/Comments<br>
+                    <textarea name="misc" id="misc" rows="4" cols="30"
+                        placeholder="Describe any special accomodations such as the need and location of a drop-off request."></textarea>
+                </label>
+
+                <button type="submit" id="reserve-now">Reserve Now</button>
+            </form>
         </section>
 
     </main>
