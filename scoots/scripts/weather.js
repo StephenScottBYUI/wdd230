@@ -54,6 +54,7 @@ const displayForecast = async (forecastData) => {
         temperature.innerHTML = `${forecastTemp}&deg;F`;
         condition.textContent = `${weatherItem.main}, ${weatherItem.description}`;
         iconHolder.setAttribute('src', iconscr);
+        iconHolder.setAttribute('alt', weatherItem.description);
 
         forecastContainer.appendChild(title);
         forecastContainer.appendChild(iconHolder);
