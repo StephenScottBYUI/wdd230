@@ -85,4 +85,26 @@
         justify-self: center;
         align-self: center;
     }
+
+    #rentalInformation {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    div.type-container {
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
+        background-color: var(--heading-color);
+    }
+
+    div.type-container h2 {
+        grid-column: span 2;
+        border-bottom: 1px solid var(--background-color);
+    }
+
+    div.extra {
+        grid-column: auto;
+        grid-row: auto;
+        border: 1px solid var(--background-color);
+    }
 }

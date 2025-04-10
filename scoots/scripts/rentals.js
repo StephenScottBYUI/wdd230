@@ -4,9 +4,9 @@ const rentalURL = 'https://stephenscottbyui.github.io/wdd230/scoots/data/rental-
 async function getRentalData() {
     try {
         const rentalResponse = await fetch(rentalURL);
-        
 
-        if (rentalResponse.ok){
+
+        if (rentalResponse.ok) {
             const rentalData = await rentalResponse.json();
             displayRentalData(rentalData.rentals);
         } else {
@@ -15,20 +15,20 @@ async function getRentalData() {
     } catch (error) {
         console.log(error);
     }
-    
+
 }
 
 getRentalData();
 
 const displayRentalData = (rentals) => {
-    rentals.forEach((rentalType) =>{
+    rentals.forEach((rentalType) => {
         rentalType.models.forEach((model) => {
             let vehicle = document.createElement('div');
             let vehicleType = document.createElement('h3');
             let vehicleImage = document.createElement('img');
             let vehicleDescription = document.createElement('p');
 
-            vehicle.setAttribute('class', 'vehicles');
+            vehicle.setAttribute('class', 'vehicles grid');
             vehicleType.textContent = `${model.name}`;
             vehicleImage.setAttribute('src', model.image);
             vehicleDescription.textContent = `${model.description}`;
