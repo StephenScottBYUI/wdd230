@@ -31,6 +31,7 @@ const displayRentalData = (rentals) => {
             vehicle.setAttribute('class', 'vehicles grid');
             vehicleType.textContent = `${model.name}`;
             vehicleImage.setAttribute('src', model.image);
+            vehicleImage.setAttribute('loading', 'lazy')
             vehicleDescription.textContent = `${model.description}`;
 
             vehicle.appendChild(vehicleType);

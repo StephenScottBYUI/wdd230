@@ -24,7 +24,7 @@ const displayRentalData = (rentals) => {
     rentals.forEach((rentalType) => {
         let typeContainer = document.createElement('div')
         let type = document.createElement('h2');
-        typeContainer.setAttribute('class', 'grid type-container')
+        typeContainer.setAttribute('class', 'grid type-container container')
         type.textContent = `${rentalType.type}`;
         rentalType.models.forEach((model) => {
             let vehicle = document.createElement('div');
@@ -36,6 +36,7 @@ const displayRentalData = (rentals) => {
             vehicle.setAttribute('class', 'rental-types extra grid');
             vehicleType.textContent = `${model.name}`;
             vehicleImage.setAttribute('src', model.image);
+            vehicleImage.setAttribute('loading', 'lazy')
             vehicleDescription.textContent = `${model.description}`;
             person.textContent = `Passenger Type: ${model.persons}`;
 
